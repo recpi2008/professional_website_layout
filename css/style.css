@@ -40,13 +40,34 @@ body {
   margin: 0 41px 0 0;
 }
 
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .header__button {
   background-color: transparent;
   border: 0;
 }
 
+.icon {
+  fill:#f1e4e6;
+}
+
+.header__button:hover,
+.header__button:focus {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .header__link {
   margin: 0 0 0 33px;
+}
+
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.7;
 }
 
 .header__wrp {
@@ -79,6 +100,17 @@ body {
   line-height: 58px;
   color: var(--black);
   text-transform: uppercase;
+  position: relative;
+}
+
+.brand__title::after {
+  content: '';
+  width: 12px;
+  height: 92px;
+  background: #F16D7F;
+  position: absolute;
+  left: -18px;
+  top: 0px;
 }
 
 .brand__sub-title {
@@ -225,6 +257,12 @@ body {
   margin-left: 18px;
 }
 
+.products__item-img:hover,
+.products__item-img:focus {
+  cursor: pointer;
+  
+}
+
 .products__button {
   width: 211px;
   height: 47px;
@@ -236,8 +274,75 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-transform: capitalize;
-
   color: #f26376;
+  border: 1px solid;
+}
+
+/* .products__button:hover,
+.products__button:focus {
+  background: #F16D7F;
+  color: white;
+  cursor: pointer;
+  
+} */
+
+.cart {
+  min-height: 420px;
+  width: 360px;
+}
+
+.cart-wrapper-overlay {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 138px;
+  height: 43px;
+  background-color: Transparent;
+  border: 1px solid #FFFFFF;
+
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+.button::before {
+  content: '';
+  width: 19px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  background-image: url("../img/busket_hover.png");
+  background-size: 19px 15px;
+}
+
+.products__item-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-height: 428px;
+}
+
+.button {
+  display: none;
+}
+.products__item-hover {
+  display: none;
+}
+
+.cart:hover .button,
+.cart:hover .products__item-hover {
+  display: block;
+
 }
 
 .benefits {
@@ -371,9 +476,10 @@ body {
 
 .subscription__email {
   width: 256px;
-  height: 49px;
+  height: 47px;
   background: #e1e1e1;
   border-radius: 25px 0 0 25px;
+  border:0px;
 
   font-family: Lato;
   font-style: normal;
@@ -391,7 +497,7 @@ body {
   height: 49px;
   background: #f16d7f;
   border-radius: 0 25px 25px 0;
-
+  border:0px;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -400,9 +506,13 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #ffffff;
   padding-left: 15px;
+}
+
+.subscription__subscribe:hover,
+.subscription__subscribe:focus {
+  cursor: pointer;
 }
 
 .footer {
@@ -441,7 +551,247 @@ body {
   background: #ffffff;
 }
 
+.footer__social:hover .icon-social,
+.footer__social:focus .icon-social {
+  background: #F16D7F;
+  fill: white;
+  
+}
+.footer__social:hover,
+.footer__social:focus {
+  background: #F16D7F;
+  fill: white;
+  
+}
+
 .footer__social-img {
   display: block;
   margin: 8px auto;
 }
+
+/* registration */
+.registitle {
+  min-height: 148px;
+  background: #F8F3F4;
+ 
+  
+}
+
+.registitle__title {
+  font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+color: #F16D7F;
+text-transform: uppercase;
+padding-top: 60px;
+}
+
+.registration {
+  display: flex;
+  margin: 0 0 63px;
+}
+
+.registration__wrp {
+  display: flex;
+  min-height: 675px;
+}
+
+.registration__legend {
+font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+color: #222222;
+text-transform: capitalize;
+}
+
+.registration__form {
+  margin-top: 64px;
+}
+
+.registration__input {
+ width: 300px;
+ height: 45px;
+ margin-top: 20px;
+ padding-left: 17px;
+
+ font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+text-transform: capitalize;
+color: #B1B1B1;
+}
+
+.registration__radio {
+  height: 50px;
+  padding-top: 47px;
+}
+
+.registration__title-wrp {
+  display: flex;
+  padding: 0 0 0 230px;
+  flex-grow: 1;
+  display: block;
+}
+
+.registration__title {
+  font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin-top: 64px;
+text-transform: uppercase;
+}
+
+.registration__text {
+  font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin-top: 22px;
+width: 652px;
+}
+
+.registration__list {
+  list-style: none;
+  margin: 0;
+  margin-top: 21px;
+}
+
+.registration__item {
+position: relative;
+margin-bottom: 23px;
+font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+}
+
+.registration__item::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  background-image: url("../img/Vector.png");
+  background-size: 15px 15px;
+}
+
+.registration__form {
+width: 215px;
+}
+
+fieldset {
+  border: none;
+}
+
+.radio-input {
+display:none;
+}
+
+.radio-label {
+  position: relative;
+  margin: 10px 0 20px 20px;
+  font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+line-height: 13px;
+color: #000000;
+padding-right: 20px;
+}
+
+.radio-label:before{
+  content:'';
+  width: 15px;
+  height: 15px;
+  border: 1px solid #A4A4A4;
+  position: absolute;
+  left: -20px;
+  border-radius: 50%;
+}
+
+.radio-label:after{
+  content:'';
+  width: 9px;
+  height: 9px;
+  background: black;
+  border: 1px solid;
+  box-sizing: border-box;
+  position: absolute;
+  left: -16px;
+  top: 3px;
+  border-radius: 50%;
+  display: none;
+}
+
+.radio-input:checked+.radio-label:after {
+  display: block;
+}
+
+.registration__form-text {
+width: 360px;
+font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+color: #B1B1B1;
+margin-top: 15px;
+}
+
+.registration__button {
+  width: 167px;
+  height: 50px;
+  margin-top: 40px;
+  background: #F16D7F;
+  border:none;
+  font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+text-transform: uppercase;
+position: relative;
+text-align: left;
+padding-left: 30px;
+}
+
+.registration__button:hover,
+.registration__button:focus {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.registration__button::before {
+  content: '';
+  width: 19px;
+  height: 15px;
+  position: absolute;
+  top: 18px;
+  left: 120px;
+  background-image: url("../img/Group.png");
+  background-size: 19px 15px;
+}
+
+.icon-social {
+  fill:#000000;
+  width: 15px;
+  height: 20px;
+  margin-left: 9px;
+  margin-top: 5px;
+}
+
