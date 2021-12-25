@@ -1,0 +1,57 @@
+.sales_item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sales__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sales_item-title {
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.sales__item-woman {
+    background-image: url("../img/sail-women.jpg");
+    margin: 0 30px 0 0;
+}
+
+.sales__item-man {
+    background-image: url("../img/sale-man.jpg");
+    margin: 0 30px 0 0;
+}
+
+.sales__item-kids {
+    background-image: url("../img/sale-kids.jpg");
+}
+
+.sales__item-shoes {
+    width: 100%;
+    background-image: url("../img/sales-shoes.jpg");
+    margin: 30px 0 0 0;
+}
+
+.sales_item-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.sales_item-title {
+    text-transform: uppercase;
+    color: $pink-text;
+}

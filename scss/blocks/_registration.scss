@@ -1,0 +1,216 @@
+.registitle {
+    min-height: 148px;
+    background: #F8F3F4;
+
+
+}
+
+.registitle__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.registration {
+    display: flex;
+    margin: 0 0 63px;
+}
+
+.registration__wrp {
+    display: flex;
+    min-height: 675px;
+}
+
+.registration__legend {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    text-transform: capitalize;
+}
+
+.registration__form {
+    margin-top: 64px;
+}
+
+.registration__input {
+    width: 300px;
+    height: 45px;
+    margin-top: 20px;
+    padding-left: 17px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #B1B1B1;
+}
+
+.registration__radio {
+    height: 50px;
+    padding-top: 47px;
+}
+
+.registration__title-wrp {
+    display: flex;
+    padding: 0 0 0 230px;
+    flex-grow: 1;
+    display: block;
+}
+
+.registration__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 64px;
+    text-transform: uppercase;
+}
+
+.registration__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 22px;
+    width: 652px;
+}
+
+.registration__list {
+    list-style: none;
+    margin: 0;
+    margin-top: 21px;
+}
+
+.registration__item {
+    position: relative;
+    margin-bottom: 23px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.registration__item::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    background-image: url("../img/Vector.png");
+    background-size: 15px 15px;
+}
+
+.registration__form {
+    width: 215px;
+}
+
+fieldset {
+    border: none;
+}
+
+.registration__radio-input {
+    display: none;
+}
+
+.registration__radio-label {
+    position: relative;
+    margin: 10px 0 20px 20px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    padding-right: 20px;
+}
+
+.registration__radio-label:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid #A4A4A4;
+    position: absolute;
+    left: -20px;
+    border-radius: 50%;
+}
+
+.registration__radio-label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: black;
+    border: 1px solid;
+    box-sizing: border-box;
+    position: absolute;
+    left: -16px;
+    top: -4px;
+    border-radius: 50%;
+    display: none;
+}
+
+.registration__radio-input:checked+.registration__radio-label:after {
+    display: block;
+}
+
+.registration__form-text {
+    width: 360px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 15px;
+}
+
+.registration__button {
+    width: 167px;
+    height: 50px;
+    margin-top: 40px;
+    background: #F16D7F;
+    border: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.registration__button:hover,
+.registration__button:focus {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.registration__button::before {
+    content: '';
+    width: 19px;
+    height: 15px;
+    position: absolute;
+    top: 18px;
+    left: 120px;
+    background-image: url("../img/Group.png");
+    background-size: 19px 15px;
+}
