@@ -8,6 +8,13 @@
     justify-content: space-between;
     min-height: 75px;
     align-items: center;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 43px;
+        padding-bottom: 9px;
+    }
 }
 
 .footer__text {

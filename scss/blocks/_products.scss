@@ -28,11 +28,20 @@
     justify-content: center;
     background: #f8f8f8;
     margin-top: 30px;
+
+    @include tablet {
+        margin-right: 30px;
+    }
+
 }
 
 .products__list {
     display: flex;
     flex-wrap: wrap;
+
+    @include tablet {
+        justify-content: center;
+    }
 }
 
 .products__item-first {
@@ -74,6 +83,7 @@
 
 .products__item-link {
     margin-left: 18px;
+    color: $pink-text;
 }
 
 .products__item-img:hover,

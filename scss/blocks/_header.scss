@@ -46,3 +46,9 @@
 .header__menu {
     display: none;
 }
+
+@media (max-width: $mobile-width) {
+    .header__link {
+        display: none;
+    }
+}
