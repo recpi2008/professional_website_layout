@@ -1,3 +1,8 @@
+.products {
+    width: 1140px;
+    margin: auto;
+}
+
 .products__title {
     text-align: center;
     font-family: Lato;
@@ -174,4 +179,16 @@
 .products__cart:hover .products__item-hover {
     display: block;
 
+}
+
+@media (max-width: $tablet-width) {
+    .products {
+        width: 92%;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .products {
+        width: 91%;
+    }
 }
