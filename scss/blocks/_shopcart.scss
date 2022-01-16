@@ -90,6 +90,7 @@
 
     color: #575757;
     margin-bottom: 6px;
+    text-transform: capitalize;
 
     @include mobile {
         @include font(14px, 17px);

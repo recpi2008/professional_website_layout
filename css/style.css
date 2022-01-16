@@ -1482,6 +1482,7 @@ fieldset {
   line-height: 26px;
   color: #575757;
   margin-bottom: 6px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 767px) {
