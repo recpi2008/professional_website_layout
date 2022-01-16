@@ -1,0 +1,104 @@
+.header {
+    background-color: $black;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header__button {
+    background-color: transparent;
+    border: 0;
+}
+
+.icon {
+    fill: $pink-bkg;
+}
+
+.icon:hover {
+    opacity: 0.7;
+}
+
+.icon-basket {
+    fill: $pink-bkg;
+}
+
+.header__button:hover,
+.header__button:focus {
+    cursor: pointer;
+}
+
+.header__link {
+    background-color: transparent;
+    border: 0;
+}
+
+.header__link:hover,
+.header__link:focus {
+    opacity: 0.7;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header__menu {
+    display: none;
+}
+
+@media (max-width: $mobile-width) {
+    .header__link {
+        display: none;
+    }
+}
+
+.header__menu-common {
+    width: 232px;
+    height: 764px;
+    padding-top: 37px;
+    overflow: hidden;
+}
+
+.header__menu-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 33px;
+}
+
+.menu-sub-item__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    margin: 12px 30px 12px;
+
+
+}
+
+.menu-sub-item__item-link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-transform: capitalize;
+    margin: 12px 54px 12px;
+}
